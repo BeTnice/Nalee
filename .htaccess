@@ -1,0 +1,727 @@
+RewriteEngine on
+
+Options +FollowSymLinks
+
+
+RewriteRule ^index.html$ index.php [L]
+RewriteRule ^gioi-thieu.html$ about.php [L]
+RewriteRule ^spa.html$ services.php [L]
+RewriteRule ^thoi-trang.html$ fashions.php [L]
+RewriteRule ^my-pham.html$ products.php [L]
+RewriteRule ^lien-he.html$ contact.php [L]
+RewriteRule ^blog.html$ blog.php [L]
+
+RewriteRule ^my-pham/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ productdetail.php?id=$2
+RewriteRule ^my-pham/page/([0-9]+)\.html$ products.php?page=$1
+RewriteRule ^my-pham/danh-muc/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ cateproducts.php?id=$2
+
+RewriteRule ^thoi-trang/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ fashiondetail.php?id=$2
+RewriteRule ^thoi-trang/page/([0-9]+)\.html$ fashions.php?page=$1
+RewriteRule ^thoi-trang/danh-muc-thoi-trang/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ catefashions.php?id=$2
+
+RewriteRule ^spa/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ services-single.php?id=$2
+RewriteRule ^spa/page/([0-9]+)\.html$ services.php?page=$1
+RewriteRule ^blog/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ blog-single.php?id=$2
+RewriteRule ^blog/page/([0-9]+)\.html$ blog.php?page=$1
+RewriteRule ^blog/danh-muc/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ cateblog.php?id=$2
+
+# BAN USER BY IP
+
+<Limit GET POST>
+
+order allow,deny
+
+allow from all
+
+deny from 93.116.233
+
+deny from 95.25.66
+
+deny from 193.106.187
+
+deny from 130.180.216
+
+deny from 86.106.231
+
+deny from 109.185.21
+
+deny from 95.153.113
+
+deny from 213.238.8
+
+deny from 89.189.133
+
+deny from 194.44.142
+
+deny from 178.120.99
+
+deny from 84.51.222
+
+deny from 77.120.189
+
+deny from 178.216.7
+
+deny from 178.49.236
+
+deny from 176.8.129
+
+deny from 85.26.165
+
+deny from 31.207.238
+
+deny from 93.84.16
+
+deny from 62.183.125
+
+deny from 95.135.203
+
+deny from 80.252.247
+
+deny from 5.167.97
+
+deny from 109.252.52
+
+deny from 178.90.57
+
+deny from 212.76.171
+
+deny from 5.44.169
+
+deny from 130.180.217
+
+deny from 91.198.143
+
+deny from 176.114.36
+
+deny from 178.34.160
+
+deny from 2.132.237
+
+deny from 178.121.172
+
+deny from 217.20.67
+
+deny from 95.135.8
+
+deny from 46.63.176
+
+deny from 78.132.247
+
+deny from 62.182.86
+
+deny from 81.17.143
+
+deny from 37.54.143
+
+deny from 37.151.205
+
+deny from 176.119.234
+
+deny from 87.240.21
+
+deny from 5.251.245
+
+deny from 82.119.137
+
+deny from 178.219.92
+
+deny from 5.35.153
+
+deny from 151.249.164
+
+deny from 193.31.203
+
+deny from 176.37.90
+
+deny from 95.188.16
+
+deny from 188.113.172
+
+deny from 213.227.249
+
+deny from 89.35.43
+
+deny from 95.135.13
+
+deny from 109.104.188
+
+deny from 109.126.22
+
+deny from 87.76.239
+
+deny from 85.90.196
+
+deny from 5.138.180
+
+deny from 95.132.72
+
+deny from 46.219.252
+
+deny from 95.159.150
+
+deny from 192.77.252
+
+deny from 104.207.73
+
+deny from 198.96.88
+
+deny from 104.207.73
+
+deny from 51.254.143
+
+deny from 104.223.22
+
+deny from 51.254.78
+
+deny from 23.108.93
+
+deny from 104.223.23
+
+deny from 94.23.218
+
+deny from 36.63.85
+
+deny from 173.234.165
+
+deny from 107.153.8
+
+deny from 83.143.242
+
+deny from 212.129.42
+
+deny from 192.161.62
+
+deny from 109.86.72
+
+deny from 192.255.101
+
+deny from 192.198.105
+
+deny from 199.16.156
+
+deny from 23.236.241
+
+deny from 198.56.231
+
+deny from 155.133.64
+
+deny from 13.84.227
+
+deny from 108.168.211
+
+deny from 195.154.166
+
+deny from 77.245.148
+
+deny from 217.188.45
+
+deny from 178.32.12
+
+deny from 216.119.148
+
+deny from 188.50.191
+
+deny from 117.6.99
+
+deny from 114.37.235
+
+deny from 194.79.63
+
+deny from 23.88.160
+
+deny from 23.232.130
+
+deny from 120.55.160
+
+deny from 87.98.217
+
+deny from 195.154.166
+
+deny from 169.50.100
+
+deny from 89.229.8
+
+deny from 107.173.148
+
+deny from 172.98.195
+
+deny from 14.163.108
+
+deny from 14.192.209
+
+deny from 46.29.255
+
+deny from 104.238.222
+
+deny from 23.89.246
+
+deny from 36.63.87
+
+deny from 46.4.93
+
+deny from 104.129.10
+
+deny from 208.80.194
+
+deny from 51.254.106
+
+deny from 158.69.240
+
+deny from 201.243.246
+
+deny from 172.241.172
+
+deny from 66.248.196
+
+deny from 23.105.56
+
+deny from 104.237.88
+
+deny from 180.243.45
+
+deny from 23.105.56
+
+deny from 66.248.196
+
+deny from 38.87.46
+
+deny from 62.210.148
+
+deny from 91.236.74
+
+deny from 23.95.217.202
+
+deny from 104.160.244
+
+deny from 104.223.23
+
+deny from 198.52.196
+
+deny from 104.129.59
+
+deny from 195.22.127
+
+deny from 198.52.139
+
+deny from 104.223.26
+
+deny from 192.161.60
+
+deny from 208.80.194
+
+deny from 45.63.25
+
+deny from 198.52.139
+
+deny from 89.32.251
+
+deny from 198.167.138
+
+deny from 107.169.253
+
+deny from 198.52.210
+
+deny from 86.106.16
+
+deny from 207.46.13
+
+deny from 204.12.197
+
+deny from 216.158.206
+
+deny from 199.233.247
+
+deny from 173.254.226
+
+deny from 114.108.158
+
+deny from 104.160.10
+
+deny from 192.161.171
+
+deny from 189.2.65
+
+deny from 198.52.210
+
+deny from 128.30.52
+
+deny from 66.248.215
+
+deny from 103.238.80
+
+deny from 198.52.180
+
+deny from 188.212.23
+
+deny from 104.131.217
+
+deny from 172.98.195
+
+deny from 198.167.138
+
+deny from 37.153.140
+
+deny from 209.164.80
+
+deny from 165.231.84
+
+deny from 31.162.15
+
+deny from 62.217.130
+
+deny from 199.180.134
+
+deny from 27.159.192
+
+deny from 104.160.242
+
+deny from 155.94.172
+
+deny from 198.58.110
+
+deny from 104.160.232
+
+deny from 178.165.87
+
+deny from 46.22.214
+
+deny from 151.80.129
+
+deny from 178.255.215
+
+deny from 23.89.246
+
+deny from 23.88.212
+
+deny from 31.220.6
+
+deny from 45.45.150
+
+deny from 63.141.249
+
+deny from 198.167.138
+
+deny from 94.242.212
+
+deny from 107.173.223
+
+deny from 192.161.62
+
+deny from 204.44.127
+
+deny from 111.248.142
+
+deny from 198.52.185
+
+deny from 173.79.16
+
+deny from 23.107.60
+
+deny from 111.248.142
+
+deny from 190.0.67
+
+deny from 192.200.22
+
+deny from 37.153.140
+
+deny from 187.190.155
+
+deny from 5.157.15
+
+deny from 69.12.86
+
+deny from 104.160.31
+
+deny from 195.154.60
+
+deny from 104.129.15
+
+deny from 198.52.185
+
+deny from 62.210.84
+
+deny from 116.118.109
+
+deny from 199.233.247
+
+deny from 31.220.6
+
+deny from 93.127.148
+
+deny from 23.94.204
+
+deny from 192.200.22
+
+deny from 104.202.147
+
+deny from 198.52.210
+
+deny from 31.187.76
+
+deny from 46.29.249
+
+deny from 94.179.112
+
+deny from 155.94.138
+
+deny from 66.34.201
+
+deny from 89.40.126
+
+deny from 175.228.18
+
+deny from 184.168.193
+
+deny from 185.63.252
+
+deny from 198.57.247
+
+deny from 91.196.100
+
+deny from 83.220.238
+
+deny from 5.44.169
+
+deny from 46.46.79
+
+deny from 93.85.147
+
+deny from 77.79.145
+
+deny from 5.141.237
+
+deny from 109.187.241
+
+deny from 5.248.38
+
+deny from 91.79.233
+
+deny from 195.234.6
+
+deny from 94.41.53
+
+deny from 94.51.110
+
+deny from 46.255.37
+
+deny from 91.214.28
+
+deny from 46.72.83
+
+deny from 94.240.172
+
+deny from 91.196.178
+
+deny from 80.237.123
+
+deny from 134.17.176
+
+deny from 37.55.141
+
+deny from 5.141.219
+
+deny from 31.29.208
+
+deny from 94.179.28
+
+deny from 176.28.68
+
+deny from 213.24.125
+
+deny from 46.175.67
+
+deny from 91.243.231
+
+deny from 178.214.222
+
+deny from 109.188.124
+
+deny from 178.90.225
+
+deny from 37.131.225
+
+deny from 178.173.7
+
+deny from 5.255.160
+
+deny from 46.46.78
+
+deny from 212.66.63
+
+deny from 188.116.173
+
+deny from 89.185.31
+
+deny from 213.151.9
+
+deny from 95.133.28
+
+deny from 116.96.84
+
+deny from 5.18.228
+
+deny from 5.44.172
+
+deny from 176.74.108
+
+deny from 91.244.9
+
+deny from 93.76.171
+
+deny from 2.93.254
+
+deny from 193.169.80
+
+deny from 95.65.29
+
+deny from 90.189.116
+
+deny from 82.207.116
+
+deny from 37.215.56
+
+deny from 1.205.206
+
+deny from 109.122.62
+
+deny from 5.35.145
+
+deny from 109.252.45
+
+deny from 81.177.126
+
+deny from 37.75.197
+
+deny from 46.173.1
+
+deny from 109.191.206
+
+deny from 85.140.80
+
+deny from 213.87.100
+
+deny from 90.154.67
+
+deny from 91.224.255
+
+deny from 37.212.44
+
+deny from 188.232.233
+
+deny from 89.163.148
+
+deny from 27.67.6
+
+</Limit>
+
+
+
+RewriteEngine on
+
+Options +FollowSymLinks
+
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^index.html$ index.php [L]
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^gioi-thieu.html$ about.php [L]
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^spa.html$ services.php [L]
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^thoi-trang.html$ fashions.php [L]
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^my-pham.html$ products.php [L]
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^lien-he.html$ contact.php [L]
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^blog.html$ blog.php [L]
+
+
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^my-pham/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ productdetail.php?id=$2
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^my-pham/page/([0-9]+)\.html$ products.php?page=$1
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^my-pham/danh-muc/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ cateproducts.php?id=$2
+
+
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^thoi-trang/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ fashiondetail.php?id=$2
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^thoi-trang/page/([0-9]+)\.html$ fashions.php?page=$1
+
+
+
+
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^spa/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ services-single.php?id=$2
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^spa/page/([0-9]+)\.html$ services.php?page=$1
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^blog/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ blog-single.php?id=$2
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^blog/page/([0-9]+)\.html$ blog.php?page=$1
+
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^blog/danh-muc/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ cateblog.php?id=$2
+
+
+
+
+
+
+
+
+
+
+

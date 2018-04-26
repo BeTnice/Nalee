@@ -1,0 +1,292 @@
+.about-section{
+	margin-top:1em;
+}
+.grid-about-about {
+    position: relative;
+    margin: 0 auto;
+}
+.grid-about figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	height: auto;
+	background: #000;
+	text-align: center;
+	cursor: pointer;
+} 
+.grid-about figure img {
+	position: relative;
+	display: block; 
+	opacity: 0.8;
+	width: 100%;
+} 
+.grid-about figure figcaption {
+	padding: 2em;
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+/*
+.grid-about figure figcaption::before,
+.grid-about figure figcaption::after {
+	pointer-errors: none;
+}
+*/
+.grid-about figure figcaption,
+.grid-about figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid-about figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+.grid-about figure h4 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.grid-about figure h4 span {
+    font-weight: bold;
+    color: #fff;
+    margin-left: 12px;
+} 
+.grid-about .grid-about figure.effect-jazz img {
+	opacity: 0.8;
+}
+.grid-about figure.effect-jazz figcaption::after,
+.grid-about figure.effect-jazz img,
+.grid-about figure.effect-jazz p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+.grid-about figure.effect-jazz figcaption::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+	transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+.grid-about figure.effect-jazz p {
+	opacity:1;
+	-webkit-transform: scale3d(0.8,0.8,1);
+	-moz-transform: scale3d(0.8,0.8,1);
+	-o-transform: scale3d(0.8,0.8,1);
+	-ms-transform: scale3d(0.8,0.8,1); 
+	transform: scale3d(0.8,0.8,1);
+}
+.grid-about figure.effect-jazz h4 {
+	padding-top:40%;
+    -webkit-transition: -webkit-transform 0.35s;
+	-moz-transition: transform 0.35s;
+	-o-transition: transform 0.35s;
+	-ms-transition: transform 0.35s;
+    transition: transform 0.35s;
+    color:#ff7200;
+    font-weight: bold;
+    font-size:1.4em;
+}
+.grid-about figure.effect-jazz p {
+    padding: 1em 0;
+    text-transform: none;
+    opacity: 0;
+    color: #fff;
+    font-size: .8em;
+    letter-spacing: 2px;
+}
+.grid-about figure.effect-jazz:hover img {
+	opacity: 0.4;
+	-webkit-transform: scale3d(1.05,1.05,1);
+	-moz-transform: scale3d(1.05,1.05,1);
+	-o-transform: scale3d(1.05,1.05,1);
+	-ms-transform: scale3d(1.05,1.05,1);
+	transform: scale3d(1.05,1.05,1);
+}
+.grid-about figure.effect-jazz:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+	-moz-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+	-o-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+	-ms-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+	transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+}
+.grid-about figure.effect-jazz:hover h4,
+.grid-about figure.effect-jazz:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	-moz-transform: scale3d(1,1,1);
+	-ms-transform: scale3d(1,1,1);
+	-o-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+.about-section.abt-w3sec2 {
+    margin-top: 5em;
+} 
+.about-section.abt-w3sec2.w3ls{ 
+	margin:0;
+} 
+.abt-w3limg.one {
+    margin-bottom:0;
+}
+.start{
+	text-align:center;
+	margin-top: 2em;
+}
+.start a {
+    padding: 1em 2em;
+    background: #FF5722;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    border: 1px solid #FF5722;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+	transition:.5s all;
+}
+.start a:hover {
+    color: #FF5722;
+    background: #fff;
+}
+h3.agileits-title ,h2.agileits-title {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    color: #333;
+	text-align: center;
+}
+.ab-text {
+    text-align: center;
+	margin-top: 2em;
+}
+
+.ab-text h6 {
+    font-size: 1.6em;
+    color: #008c9a;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+    font-style: italic;
+}
+.grid {
+	position: relative; 
+	margin: 0 auto; 
+}
+.hf-text {
+	text-align: center;
+	background-color: #fff;
+	padding-bottom: 1em;
+} 
+.hf-text h5 {
+	font-size: 2em;
+    font-weight: 400;
+    color: #011750;
+    line-height: 1.8em;
+} 
+.hf-text p{
+    color: #D00030;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+} 
+.csblog{
+	background-color: rgb(255,239,227);
+    margin-top: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+/*-- footer1 --*/
+.footer1{
+	padding:4em 0;
+}
+.footer1 h3 {
+    font-size: 2.5em;
+    color: #000;
+    margin-bottom: 0.6em;
+}
+.footer1-grids:nth-child(1) {
+    padding: 0 3em 0 0;
+}
+.footer1-grids span {
+    display: block;
+}
+.footer1-grids span a {
+    color:#FF5722;
+}
+.footer1-grids span a:hover{
+    color: #333;
+} 
+.footer1 form {
+    position: relative;
+    margin-top: 1em;
+}
+.footer1 input[type="email"] {
+    background: #fff;
+    padding: .8em 4em .8em 1em;
+    font-size: 1em;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #D6D6D6;
+	outline: none;
+}
+.footer1 input[type="submit"] {
+    -webkit-appearance: none;
+    background: url(../images/arrow.png)no-repeat center;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 1px;
+    outline: none;
+    width: 60px;
+    height: 100%;
+}
+.footer1 form:hover input[type="email"] {
+    border-color:#FF5722;
+} 
+.footer1-copy {
+    padding: 1.5em 0;
+    background: #140e0a;
+}
+.footer1-copy p {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.footer1-copy p a {
+    color:#FF5722;
+}
+.footer1-copy p a:hover{
+    color: #fff;
+} 
+.dktv input{
+    background: #fff;
+    padding: .8em 4em .8em 1em;
+    font-size: 1em;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #D6D6D6;
+	outline: none;
+}
+
+.dktv form:hover input{
+    border-color:#FF5722;
+} 
+/*-- //footer1 --*/ 
